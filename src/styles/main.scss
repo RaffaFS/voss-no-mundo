@@ -101,12 +101,20 @@ body{
                 }
                 .destaque{
                     background-color: #fff;
-                    color: #000;
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                    }
 
                     &:hover{
-                        background: #002;
-                        color: #fff;
+                        background-color: #002;
+                        
+                        a{
+                            color: #fff;
+                        }
                     }
+
+                    
                 }
             }
         }
@@ -122,6 +130,25 @@ body{
 
                 .description{
                     margin-bottom: 8px;
+                }
+            }
+        }
+        .projetos{
+            text-align: center;
+            transform: translate(-50%, -50%);
+            max-width: 1480px;
+            
+            .projects_box{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+
+                .projeto{
+                    max-width: 240px;
+    
+                    img{
+                        max-width: 240px;
+                    }
                 }
             }
         }

@@ -185,15 +185,15 @@ body{
             }
         }
         .hidden{
-            transform: translate(-80%, 240px);
+            transform: translate(-80%, 360px);
             opacity: 0;
 
             @media(max-width: 768px){
-                transform: translate(-50%, 240px);
+                transform: translate(-50%, 360px);
             }
         }
         .hidden2{
-            transform: translate(-50%, 240px);
+            transform: translate(-50%, 360px);
             opacity: 0;
         }
     }

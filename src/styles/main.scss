@@ -9,7 +9,7 @@
 body{
     height: 100vh;
     overflow: hidden;
-    background-image: url(../img/G0022615edit.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 75%;
@@ -19,7 +19,6 @@ body{
     &::after{
         position: absolute;
         z-index: -1;
-        //background: radial-gradient(transparent, #000);
         background-color: #002;
         inset: 0;
         content: '';
@@ -135,21 +134,54 @@ body{
         }
         .projetos{
             text-align: center;
+            position: relative;
             transform: translate(-50%, -50%);
-            max-width: 1480px;
-            
+            max-width: 1280px;
+            width: auto;
+
             .projects_box{
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 gap: 32px;
+                max-width: 90%;
+                margin: 32px auto;
 
                 .projeto{
-                    max-width: 240px;
-    
-                    img{
-                        max-width: 240px;
+                    max-width: 360px;
+                    transition: all ease .3s;
+                    text-shadow: 0 0 10 #000;
+                    
+                    a{
+                        text-decoration: none;
+
+                        img{
+                            max-width: 100%;
+                            border-radius: 4px;
+                        }
+                        p{
+                            margin: 0 auto;
+                        }
+                    }
+                    &:hover{
+                        transform: scale(1.04);
+                    }
+
+                    @media(max-width: 768px){
+                        max-width: 144px;
+
+                        p{
+                            text-align: center;
+                        }
                     }
                 }
+
+                @media(max-width: 768px){
+                    gap: 16px;
+                }
+            }
+            .btn{
+                margin: 0 auto;
             }
         }
         .hidden{
@@ -159,6 +191,10 @@ body{
             @media(max-width: 768px){
                 transform: translate(-50%, 240px);
             }
+        }
+        .hidden2{
+            transform: translate(-50%, 240px);
+            opacity: 0;
         }
     }
 }

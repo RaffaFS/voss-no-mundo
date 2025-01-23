@@ -12,7 +12,7 @@ body{
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 75%;
+    background-position: center 54%;
     position: relative;
     isolation: isolate;
 
@@ -68,6 +68,9 @@ body{
 
                 strong{
                     letter-spacing: 2px;
+                    background-color: rgba($color: white, $alpha: 0.4);
+                    padding: 1px 2px;
+                    border-radius: 4px;
                     cursor: pointer;
                 }
             }
@@ -135,17 +138,33 @@ body{
             transform: translate(-50%, -50%);
             max-width: 1280px;
             width: auto;
-
+            
             .projects_box{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 32px;
-                max-width: 90%;
+                max-width: 72%;
+                max-height: 68vh;
                 margin: 32px auto;
+                padding: 8px 0;
+                overflow-y: auto;
+
+                &::-webkit-scrollbar{
+                    background-color: rgba($color: white, $alpha: 0.4);
+                    border-radius: 4px;
+                    width: 8px;
+
+                    @media(max-width: 768px){
+                        width: 4px;
+                    }
+                }
+                &::-webkit-scrollbar-thumb{
+                    background-color: rgba($color: white, $alpha: 0.8);
+                }
 
                 .projeto{
-                    max-width: 360px;
+                    max-width: 50vh;
                     transition: all ease .3s;
                     text-shadow: 0 0 10 #000;
                     
@@ -165,7 +184,7 @@ body{
                     }
 
                     @media(max-width: 768px){
-                        max-width: 144px;
+                        max-width: 64vw;
 
                         p{
                             text-align: center;

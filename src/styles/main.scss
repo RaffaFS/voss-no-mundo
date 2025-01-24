@@ -2,17 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "Dosis", serif;
     color: #fff;
 }
-
+// rgb(193, 127, 250)
 body{
     height: 100vh;
     overflow: hidden;
     background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 54%;
+    background-repeat: repeat;
+    background-position: center;
     position: relative;
     isolation: isolate;
 
@@ -46,7 +45,7 @@ body{
             }
             
             .upTitle{
-                font-size: 32px;
+                font-size: 40px;
                 font-weight: 400;
                 letter-spacing: 4px;
                 
@@ -55,8 +54,9 @@ body{
                 }
             }
             .mainTitle{
-                font-family: "Abel", sans-serif;
+                font-family: "Dancing Script", serif;
                 font-size: 80px;
+                text-shadow: rgb(193, 127, 250) 0 0 4;
                 
                 @media(max-width: 768px){
                     text-align: center;
@@ -65,6 +65,7 @@ body{
             .description{
                 margin-bottom: 32px;
                 text-align: justify;
+                font-size: 20px;
 
                 strong{
                     letter-spacing: 2px;
@@ -84,16 +85,17 @@ body{
                 }
 
                 .btn{
+                    border-radius: 8px;
                     background-color: transparent;
                     padding: 8px 32px;
                     border: solid 2px #fff;
-                    font-size: 16px;
+                    font-size: 20px;
                     cursor: pointer;
                     transition: all ease .3s;
                     
                     &:hover{
                         transform: scale(1.04);
-                        box-shadow: 0 0 8 #fff;
+                        box-shadow: 0 0 8 rgb(193, 127, 250);
                         background: #fff;
                         color: #000;
                     }
@@ -106,7 +108,7 @@ body{
                     }
 
                     &:hover{
-                        background-color: #002;
+                        background-color: rgb(54, 0, 101);
                         
                         a{
                             color: #fff;
@@ -196,8 +198,9 @@ body{
                     gap: 16px;
                 }
             }
-            .btn{
-                margin: 0 auto;
+            .btn_box{
+                display: flex;
+                justify-content: center;
             }
         }
         .hidden{

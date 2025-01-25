@@ -198,6 +198,11 @@ body{
             .btn_box{
                 display: flex;
                 justify-content: center;
+                margin-bottom: 16px;
+
+                @media(max-width: 768px){
+                    margin-bottom: 16px;
+                }
             }
         }
         .hidden{

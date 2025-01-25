@@ -39,7 +39,7 @@ body{
             transition: all ease 1s;
             
             @media(max-width: 1024px){
-                padding: 0;
+                padding: 16px 0;
                 transform: translate(-50%, -50%);
                 transition: all ease .4s;
             }
@@ -198,10 +198,6 @@ body{
             .btn_box{
                 display: flex;
                 justify-content: center;
-
-                @media(max-width: 768px){
-                    margin-bottom: 32px;
-                }
             }
         }
         .hidden{

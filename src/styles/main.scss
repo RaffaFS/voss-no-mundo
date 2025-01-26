@@ -9,8 +9,9 @@
 body{
     height: 100vh;
     overflow: hidden;
-    background-image: url(../img/background.jpg);
-    background-repeat: repeat;
+    background-image: url(../img/opt2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     position: relative;
     isolation: isolate;
@@ -21,7 +22,7 @@ body{
         background-color: #002;
         inset: 0;
         content: '';
-        opacity: .6;
+        opacity: .7;
     }
 
     .container{
@@ -52,6 +53,7 @@ body{
                 font-size: 40px;
                 font-weight: 400;
                 letter-spacing: 4px;
+                text-shadow: #000 0 1px 2px;
                 
                 @media(max-width: 768px){
                     text-align: center;
@@ -70,6 +72,7 @@ body{
                 margin-bottom: 32px;
                 text-align: justify;
                 font-size: 20px;
+                text-shadow: #000 0 1px 2px;
 
                 strong{
                     letter-spacing: 2px;
